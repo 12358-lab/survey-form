@@ -1,0 +1,147 @@
+html,
+body {
+    background-color: #f9d276;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    min-width: 320px;
+}
+
+#header {
+    background-color: #83142c;
+    height: 50px;
+    margin: auto;    
+}
+
+#survey-form {
+    line-height: 50px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+h1 {
+    font-size: 2em;
+    color:white;    
+}
+
+p {
+    font-size: 1em;
+}
+
+input, select, textarea {
+    font-family : inherit;
+    font-size   : 100%;
+    border-color: #ad1d45;
+    border-radius: 10px;
+    border: 0.2px solid;
+    height: 30px;
+    width: 80%;
+    padding: 5px; 
+    max-width: 300px;
+    min-width: 200px;
+}
+
+.button {
+    font-family : inherit;
+    border-color: #ad1d45;
+    border-radius: 10px;
+    border: 0.2px solid;
+    height: 40px;
+    min-width: 80px;
+    width: 80px;
+    padding: 10px; 
+    background-color: #ad1d45;
+    color: white;
+    font-size: 1.2em;
+}
+
+select {
+    height: 40px;
+}
+
+input[type=checkbox],
+input[type=radio] {
+    height: 20px;
+    width: 20px;
+    min-width: 20px;
+}
+
+label {
+    justify-content: right;
+}
+
+
+input[type=number] {
+    width: 60px;
+    min-width: 60px;
+}
+
+textarea {    
+    height: 100px;
+}
+
+.labels {
+    width: 100%;
+    padding-right: 20px;
+}
+
+.answers {
+    width: 100%;
+}
+
+.actionSubmit {
+    margin: auto;
+    width: 45%;
+    padding-right: 10px;
+    text-align: right;
+}
+
+.actionReset {
+    margin: auto;
+    width: 45%;
+    padding-left: 10px;
+    text-align: left;
+}
+
+
+
+/* Extra small devices (phones, 600px and down) 
+By default
+@media only screen and (max-width: 600px) {...} */
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .labels {
+        width: 48%;
+        text-align: right;        
+    }
+    
+    .answers {
+        width: 48%;
+        text-align: left;
+    }
+
+    .actionSubmit {
+        text-align: right;
+        width: 48%;
+    }
+    
+    .actionReset {
+        text-align: left;
+        width: 48%;
+    }
+    
+} 
+
+/* Medium devices (landscape tablets, 768px and up) 
+@media only screen and (min-width: 768px) {
+
+} */
+
+/* Large devices (laptops/desktops, 992px and up) 
+@media only screen and (min-width: 992px) {...} */
+
+/* Extra large devices (large laptops and desktops, 1200px and up) 
+@media only screen and (min-width: 1200px) {...} */

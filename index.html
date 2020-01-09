@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="classes.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap" rel="stylesheet">        
+        <title>Survey Form</title>
+    </head>
+    <body>
+        <div id="header">
+            <h1 id="title">
+                Survey Form
+            </h1>
+        </div>
+        <p id="description">
+            Tell me how did you find the application.
+        </p>
+        <form id="survey-form">    
+            <div class="labels">
+                <label for="name" id="name-label">Your name*:</label>
+            </div>
+            <div class="answers">
+                <input type= "text" name="name" id="name" required autofocus placeholder="Enter your name">
+            </div>
+            <div class="labels">            
+                <label for="email" id="email-label">Your email*:</label>
+            </div>
+            <div class="answers">
+                <input name="email" type= "email" id="email" required placeholder="Enter your email">
+            </div>
+            <div class="labels">
+                <label for="number" id="number-label">How satisfied are you with the app?:</label>
+            </div>              
+            <div class="answers">
+                <input name="number" type= "number" id="number" min="1" max="5" placeholder="Rate">
+            </div>  
+            <div class="labels">            
+                <label for="dropdown">Would you recomend this app?:</label>
+            </div>  
+            <div class="answers">
+                <select id="dropdown">
+                    <option value="5">Totaly agree</option>
+                    <option value="3">I don't know</option>
+                    <option value="0">Absolutly no</option>
+                </select>
+            </div>                
+            <div class="labels">
+                <label for="name2">Select your gender:</label>
+            </div>              
+            <div class="answers">
+                <input type="radio" name="name" value="male" checked> Male
+                <input type="radio" name="name" value="female"> Female
+                <input type="radio" name="name" value="other"> Other
+            </div>  
+            <div class="labels">
+                <label for="status">Select your status:</label>
+            </div>
+            <div class="answers">
+                <input type="checkbox" name="status1" value="studying"> I am studyng
+                <input type="checkbox" name="status2" value="working"> I am working
+            </div>                
+
+            <div class="labels">
+                <p>Let me know your thougths on this!</p>
+            </div>
+            <div class="answers">
+                <textarea rows="4" cols="50"></textarea>
+            </div>                
+
+            <div class="actionSubmit">
+                <input type="submit" id="submit" class="button" value="Submit">
+            </div>    
+            <div class="actionReset">                
+                <input type="reset" class="button" value="Reset">                    
+            </div>
+        </form>
+    </body>
+</html>
